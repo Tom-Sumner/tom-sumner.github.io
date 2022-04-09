@@ -1,1 +1,1 @@
-[About Me](tom-sumner.github.io)
+[About Me](https://tom-sumner.github.io)

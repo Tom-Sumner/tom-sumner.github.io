@@ -38,10 +38,11 @@
 		<meta name="theme-color" content="#478ac9">
 		<meta property="og:type" content="website">
 	</head>
-	<body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-overlap u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-a338"><div class="u-clearfix u-sheet u-sheet-1">
+	<body data-home-page="/" data-home-page-title="Home" class="u-body u-overlap u-xl-mode"><header class="u-clearfix u-header u-header" id="sec-a338"><div class="u-clearfix u-sheet u-sheet-1">
 				<a href="/" class="u-image u-logo u-image-1" data-image-width="150" data-image-height="150">
 					<img src="images/pfp.webp" class="u-logo-image u-logo-image-1">
 				</a>
+				<div class="clock"><span id="clock"></span></div>
 				<nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
 					<div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
 						<a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
@@ -54,16 +55,6 @@
 						<ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/" style="padding: 10px 20px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Contact-Me/" style="padding: 10px 20px;">Contact Me</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About-Me/" style="padding: 10px 20px;">About Me</a>
-</li><li class="u-nav-item"><span class="u-button-style u-nav-link u-text-active-palette-1-base" style="padding: 10px 60px;" id="clock"></span>
-							<script type="text/javascript">
-	var clockElement = document.getElementById('clock');
-
-	function clock() {
-		clockElement.textContent = new Date().toDateString() + " - " + new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-	}
-
-	setInterval(clock, 1000);
-</script>
 </li></ul>
 					</div>
 					<div class="u-custom-menu u-nav-container-collapse">
@@ -101,7 +92,14 @@
 			</div>
 		</section>
 		
-		
+		<script type="text/javascript">
+			var clockElement = document.getElementById('clock');
+			function clock() {
+				clockElement.textContent = new Date().toDateString();
+			}
+			setInterval(clock, 1000);
+		</script>		
+
 		<footer class="u-clearfix u-footer u-grey-80" id="sec-63e3"><div class="u-align-left u-clearfix u-sheet u-sheet-1"><span class="u-file-icon u-icon u-icon-1" data-href="https://discord.com/users/683700720515416065" data-target="_blank"><img src="images/5968756.png" alt=""></span><span class="u-file-icon u-icon u-icon-2" data-href="https://www.instagram.com/tomsumner7/" data-target="_blank"><img src="images/1748551.png" alt=""></span>
 				<nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
 					<div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">

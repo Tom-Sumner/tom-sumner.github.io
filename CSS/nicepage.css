@@ -3,6 +3,12 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
+
+.dark-theme {
+  background-color: #202124;
+  color: #E2E2E2;
+}
+
 .clock {
   margin-top: 1rem;
   margin-left: 1rem;
